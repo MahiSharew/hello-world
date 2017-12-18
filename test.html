@@ -1,0 +1,29 @@
+<html>
+<head>
+	 <link href="css/styleSliders.css" rel="stylesheet" type="text/css" />
+    <link href="css/styleTrafficSimulationDe.css" 
+          rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" 
+            src="http://code.jquery.com/jquery-1.5.1.min.js">
+    </script>
+
+    <title>Application Executer</title>
+       <script type="text/javascript" language="javascript">
+        function RunFile() {
+		//WshShell = new ActiveXObject("WScript.Shell");
+		//WshShell.Run("mykic/Applications/Notes.exe", 1, false);
+		File="mykic/Applications/Notes.exe";
+
+				//WSH=new ActiveXObject("WScript.Shell");
+
+				//WSH.run(File);
+
+				var WshShell = new ActiveXObject("WScript.Shell");
+				WshShell.Exec("mykic/Applications/Notes.exe");
+  }
+    </script>
+</head>
+<body>
+	<input type="button" value="Run Notepad" onclick="RunFile();"/>
+</body>
+</html>
